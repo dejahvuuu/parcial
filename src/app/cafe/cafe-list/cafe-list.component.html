@@ -1,0 +1,29 @@
+
+  <div class="d-none d-sm-block table-responsive">
+    <table class="table table-striped table-hover custom-table">
+      <thead>
+        <tr class="table-dark">
+          <th id="titulo">#</th>
+          <th id="titulo">Nombre</th>
+          <th id="duracion">Tipo</th>
+          <th id="popularidad">Región</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr *ngFor="let cafe of cafes">
+          <td>
+            <dd>{{ cafe.id }}</dd>
+          </td>
+          <td>
+            <dd>{{ cafe.nombre }}</dd>
+          </td>
+          <td>
+            <dd>{{ cafe.tipo }}</dd>
+          </td>
+          <td>
+            <dd>{{ cafe.region }}</dd>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
